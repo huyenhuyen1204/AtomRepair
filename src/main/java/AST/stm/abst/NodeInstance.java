@@ -1,0 +1,6 @@
+package AST.stm.abst;
+
+public enum NodeInstance {
+        ARGUMENT, LEFT_ASSIGNMENT, LEFT_VAR_DECLARATION, NORMAL, INFIX, RETURN, RIGHT_ASSIGNMENT,
+        RIGHT_VAR_DECLARATION, INIT
+    }

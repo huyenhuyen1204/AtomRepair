@@ -1,0 +1,1 @@
+Sửa một vị trí lỗi : Từ SBFL ta có các điểm nghi nhờ cho từng dòng lệnh, giải pháp sẽ ranking điểm nghi ngờ từ cao xuống thấp và lần lượt lấy từng dòng đã ranking để sửa chữa. Thêm, sửa, xóa dòng lệnh như RSRepair [10], AE [11], GenProg [12], SCRepair [13]. Sửa dòng lệnh bằng một dòng 2khác được lấy từ hệ thống như JAFF [14], pyEDB

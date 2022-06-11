@@ -1,0 +1,3 @@
+/home/huyenhuyen/Desktop/APR/defects4j/framework/bin/defects4j checkout -p Closure -v 70b -w Closure_70
+cd Closure_70
+/home/huyenhuyen/Desktop/APR/defects4j/framework/bin/defects4j test
