@@ -1,0 +1,3 @@
+//changes:  in PatchToken (element to <token>)
+//changeMaps: PatchCandidate (<token> -> statementNode (candiadate)
+//changeArg : patchToken voi changeMethod != null => to synthesis for methodPattern

@@ -1,0 +1,3 @@
+We found that one important reason which hinders existing approaches [16, 20, 29] to generate the cor- rect patches in the search space is that the designed mutation op- erators work at the statement level, which are too coarse-grained. Martinez et al. reported that code redundancy is significantly higher at a finer granularity than statement level [30]. This suggests that it is more likely to find good fixing ingredients at a finer granularity. Figure 1 shows an example, which is a bug caused by a wrong expression in the return statement at line 417. To fix it, developers changed the original expression to equals(x,y,1). The fixing ingredient equals(x,y,1) exists at two other places (line 422 and line 442) in the same program. If we apply mutation operators at the
+
+

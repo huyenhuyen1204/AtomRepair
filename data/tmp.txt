@@ -1,0 +1,1 @@
+User feedbacks to presented suggestions can be a good knowledge source to remove bad suggestions and to avoid repeating suggestions to users. For instance, if a user v is suggested to u many times but u has not made friend with v, perhaps v is not a good suggestion for u although scoreu,v might be high.
