@@ -21,7 +21,7 @@ public class Configuration {
 	public static String cachePath = ".cache";
 	public static String failedTestCasesFilePath = "FailedTestCases/";
 	public static String faultLocalizationMetric = "Ochiai";
-	public static String outputPath = "output/patches";
+	public static String outputPatches = "output/patches";
 	public static String nodePath = "data/node.csv";
 
 

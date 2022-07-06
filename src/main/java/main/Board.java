@@ -433,12 +433,12 @@ public class Board {
                     log.info("Succeeded to fix the bug " + buggyProject + "====================");
                     String patchStr = TestUtils.readPatch(this.fullBuggyProjectPath);
                     if (patchStr == null || !patchStr.startsWith("diff")) {
-                        FileHelper.outputToFile(Runner.outPath+ Runner.outPath+ "FixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt",
+                        FileHelper.outputToFile(Configuration.outputPatches + "/FixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt",
                                 "//**********************************************************\n//" + targetJavaFile + " ------ "
                                         + "\n//**********************************************************\n"
                                         + "===Buggy Code===\n" + "buggyCode" + "\n\n===Patch Code===\n" + patchCode, false);
                     } else {
-                        FileHelper.outputToFile(Runner.outPath+ "FixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt", patchStr + "\n", false);
+                        FileHelper.outputToFile(Configuration.outputPatches + "/FixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt", patchStr + "\n", false);
                     }
                     this.minErrorTest = 0;
                     isFix = true;
@@ -450,12 +450,12 @@ public class Board {
                         log.info("Partially Succeeded to fix the bug " + buggyProject + "====================");
                         String patchStr = TestUtils.readPatch(this.fullBuggyProjectPath);
                         if (patchStr == null || !patchStr.startsWith("diff")) {
-                            FileHelper.outputToFile(Runner.outPath+ "PartiallyFixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt",
+                            FileHelper.outputToFile(Configuration.outputPatches+ "/PartiallyFixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt",
                                     "//**********************************************************\n//" + " ------ "
                                             + "\n//**********************************************************\n"
                                             + "===Buggy Code===\n" + "\n\n===Patch Code===\n" + patchCode, false);
                         } else {
-                            FileHelper.outputToFile(Runner.outPath+ "PartiallyFixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt", patchStr + "\n", false);
+                            FileHelper.outputToFile(Configuration.outputPatches + "/PartiallyFixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt", patchStr + "\n", false);
                         }
                     }
                 }
