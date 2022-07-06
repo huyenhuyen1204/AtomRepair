@@ -23,7 +23,7 @@ bug=<bug_ID>
 d4jPath=<path_to_defects4j>
 df4jData=<path_of_containing_defects4J_bugs>
 
-java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug df4jData $d4jPath
+java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug $df4jData $df4jPath
 ```
 Example:
 ```
@@ -32,11 +32,12 @@ bug=Chart_1
 df4jPath=/home/huyenhuyen/Desktop/APR/defects4j/
 df4jData=/home/huyenhuyen/APR/projects/
 
-java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug df4jData $d4jPath
+java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug df4jData $df4jPath
 ```
 5. Run
 ```
 sh run.sh
 ```
+
 
 
