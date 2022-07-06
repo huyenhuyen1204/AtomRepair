@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>ReRepair</artifactId>
+    <artifactId>AtomRepair</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -14,20 +14,34 @@
     </properties>
 
     <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>com.gzoltar</groupId>-->
+<!--            <artifactId>gzoltar</artifactId>-->
+<!--            <version>0.1.1</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>com.gzoltar</groupId>
-            <artifactId>gzoltar</artifactId>
+            <groupId>gzoltar</groupId>
+            <artifactId>com.gzoltar</artifactId>
             <version>0.1.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/com.gzoltar-0.1.1-jdk7.jar</systemPath>
         </dependency>
         <dependency>
-            <groupId>com.gzoltar</groupId>
-            <artifactId>com.gzoltar.core</artifactId>
-            <version>1.7.2</version>
+            <groupId>simmetrics</groupId>
+            <artifactId>uk.ac.shef.wit.simmetrics.similaritymetrics</artifactId>
+            <version>1.6.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/simmetrics_jar_v1_6_2_d07_02_07.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>info.picocli</groupId>
+            <artifactId>picocli</artifactId>
+            <version>4.6.1</version>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>com.gzoltar</groupId>-->
 <!--            <artifactId>com.gzoltar.core</artifactId>-->
-<!--            <version>1.7.3</version>-->
+<!--            <version>1.7.2</version>-->
 <!--        </dependency>-->
 
         <!-- Logger -->
@@ -93,6 +107,7 @@
 
     </dependencies>
 
+
     <repositories>
         <repository>
             <!-- for gzoltar -->
@@ -103,5 +118,38 @@
             <snapshots/>
         </repository>
     </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>main.CommandLine</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+<!--                        <configuration>-->
+<!--                            <classifier>catches</classifier>-->
+<!--                            <classesDirectory>${project.build.directory}/.catche</classesDirectory>-->
+<!--                            <includes>**/*</includes>-->
+<!--                        </configuration>-->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 
 </project>
