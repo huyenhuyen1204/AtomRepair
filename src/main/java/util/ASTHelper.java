@@ -3,9 +3,7 @@ package util;
 import AST.node.*;
 import AST.obj.Position;
 
-import com.sun.istack.internal.NotNull;
 import org.eclipse.jdt.core.dom.*;
-import org.eclipse.jgit.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -94,7 +92,7 @@ public class ASTHelper {
     }
 
 
-    public static int getLine(@NotNull ASTNode astNode, @NonNull CompilationUnit cu) {
+    public static int getLine( ASTNode astNode, CompilationUnit cu) {
         return cu.getLineNumber(astNode.getStartPosition());
     }
 
