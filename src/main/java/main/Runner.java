@@ -23,7 +23,7 @@ public class Runner {
             System.exit(0);
         }
         String bugName = args[0];
-        String workFolder = args[1];
+        String df4jData = args[1];
         String defects4J = args[2];
 //        String projectPath = "/home/huyenhuyen/Desktop/APR/benmarks/";
 //        String                                                                                                                                                                               projectPath = "data/";
@@ -31,7 +31,7 @@ public class Runner {
 //        String Defects4J_PATH = "/home/huyenhuyen/Desktop/APR/defects4j/";
 //        String Defects4J_PATH = "C:\\Users\\Dell\\Desktop\\APR_Research\\defects4j";
 
-        Board board = new Board(workFolder + OSHelper.separator(), bugName,
+        Board board = new Board(df4jData + OSHelper.separator(), bugName,
                 defects4J + OSHelper.separator(), true);
         List<SuspiciousPosition> suspiciousPositions = board.readSuspiciousCodeFromFile();
         if (suspiciousPositions != null) {

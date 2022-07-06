@@ -23,7 +23,7 @@ bug=<bug_ID>
 d4jPath=<path_to_defects4j>
 df4jData=<path_of_containing_defects4J_bugs>
 
-java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug $workingFolder $d4jPath
+java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug df4jData $d4jPath
 ```
 Example:
 ```
