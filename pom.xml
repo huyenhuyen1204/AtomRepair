@@ -43,7 +43,6 @@
 <!--            <artifactId>com.gzoltar.core</artifactId>-->
 <!--            <version>1.7.2</version>-->
 <!--        </dependency>-->
-
         <!-- Logger -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -81,24 +80,24 @@
             <artifactId>JavaDataFlow</artifactId>
             <version>0.0.2</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.junit.jupiter</groupId>-->
-<!--            <artifactId>junit-jupiter</artifactId>-->
-<!--            <version>RELEASE</version>-->
-<!--            <scope>compile</scope>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.junit.jupiter</groupId>-->
+        <!--            <artifactId>junit-jupiter</artifactId>-->
+        <!--            <version>RELEASE</version>-->
+        <!--            <scope>compile</scope>-->
+        <!--        </dependency>-->
         <!--        &lt;!&ndash; DFG - com.ibm.wala.dataflow &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.ibm.wala</groupId>-->
-<!--            <artifactId>com.ibm.wala.core</artifactId>-->
-<!--            <version>1.5.2</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash; PDG - soot.toolkits.graph.pdg &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>ca.mcgill.sable</groupId>-->
-<!--            <artifactId>soot</artifactId>-->
-<!--            <version>3.3.0</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.ibm.wala</groupId>-->
+        <!--            <artifactId>com.ibm.wala.core</artifactId>-->
+        <!--            <version>1.5.2</version>-->
+        <!--        </dependency>-->
+        <!--        &lt;!&ndash; PDG - soot.toolkits.graph.pdg &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>ca.mcgill.sable</groupId>-->
+        <!--            <artifactId>soot</artifactId>-->
+        <!--            <version>3.3.0</version>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
