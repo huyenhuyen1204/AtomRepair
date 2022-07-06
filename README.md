@@ -32,7 +32,7 @@ bug=Chart_1
 df4jPath=/home/huyenhuyen/Desktop/APR/defects4j/
 df4jData=/home/huyenhuyen/projects/
 
-java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug df4jData $d4jPath```
+java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug df4jData $d4jPath
 ```
 5. Run
 ```
