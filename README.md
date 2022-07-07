@@ -39,5 +39,7 @@ java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug df4jData $
 sh run.sh
 ```
 
+Note: Or you can use IntelliJ IDE and run src/main/java/main/Runner.java with three parameters respectively $bug df4jData $df4jPath
+
 
 
