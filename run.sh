@@ -1,6 +1,6 @@
 #!/bin/bash
 # Bug ID
-bug=Chart_1
+bug=Chart_8
 # The path of Defects4J git repository.
 df4jPath=/home/huyenhuyen/Desktop/APR/defects4j/
 # The path of containing Defects4J bugs.
