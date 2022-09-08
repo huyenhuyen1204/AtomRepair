@@ -47,11 +47,11 @@ Note:
 
 The below figure is a scenario of an infinite loop when the candidate of a token is a method with a parameter.
 
-[<img src="imgs/slide-loop1.drawio.png" width="500"/>](imgs/slide-loop1.drawio.png)
+[<img src="imgs/slide-loop1.drawio.png" width="450"/>](imgs/slide-loop1.drawio.png)
 
 To solve the infinite loop, we limit level = 1 shown below figure:
 
-[<img src="imgs/fix.png" width="450"/>](imgs/fix.png)
+[<img src="imgs/fix.png" width="400"/>](imgs/fix.png)
 
 
 
