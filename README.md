@@ -46,10 +46,12 @@ Note:
 - We recommend using level=1 to solve infinite loop. our knowledge, in practical projects, the most common case is where a function has a function parameter (i.e., LEVEL = 1)
 
 The below figure is a scenario of an infinite loop when the candidate of a token is a method with a parameter.
-![Fig.1](imgs/slide-loop1.drawio.png)
+
+[<img src="imgs/slide-loop1.drawio.png" width="400"/>](imgs/slide-loop1.drawio.png)
 
 To solve the infinite loop, we limit level = 1 shown below figure:
-![Fig.2](imgs/fix.png)
+
+[<img src="imgs/fix.png" width="350"/>](imgs/fix.png)
 
 
 
