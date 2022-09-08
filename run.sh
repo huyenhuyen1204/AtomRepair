@@ -5,5 +5,6 @@ bug=Chart_1
 df4jPath=/home/huyenhuyen/Desktop/APR/defects4j/
 # The path of containing Defects4J bugs.
 df4jData=/home/huyenhuyen/Desktop/APR/benmarks/
+level=1
 
-java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug $df4jData $df4jPath
+java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug $df4jData $df4jPath $level

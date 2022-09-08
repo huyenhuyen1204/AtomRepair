@@ -10,6 +10,7 @@ import AST.stm.token.*;
 import com.google.common.collect.Lists;
 import main.Board;
 import main.FindingAPI;
+import main.Runner;
 import main.core.pattern.BasePattern;
 import main.core.pattern.InfixPattern;
 import main.core.pattern.MethodPattern;
@@ -33,7 +34,7 @@ public class Genner {
     private FolderNode folderNode;
     private String nodeType;
     //    private List<Pattern> patterns;
-    public final static int MAX_DEEP_LEVEL = 1;
+//    public final static int MAX_DEEP_LEVEL = 1;
     private HashMap<Integer, List<StatementNode>> nodeMap = new HashMap<>();
 
     public Genner() {
@@ -664,7 +665,7 @@ public class Genner {
                 methods.addAll(constructors);
             }
 
-            if (token.getDeepLevel() < Genner.MAX_DEEP_LEVEL) {
+            if (token.getDeepLevel() < Runner.LEVEL) {
                 ((TypeToken) token).setMethodTokens(new ArrayList<>());
                 for (StatementNode method : methods) {
                     if (method instanceof MethodCalledNode) {

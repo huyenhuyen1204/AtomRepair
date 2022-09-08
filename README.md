@@ -22,8 +22,9 @@ sh compile.sh
 bug=<bug_ID>
 d4jPath=<path_to_defects4j>
 df4jData=<path_of_containing_defects4J_bugs>
+level=<level>
 
-java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug $df4jData $df4jPath
+java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug $df4jData $df4jPath $level
 ```
 Example:
 ```
@@ -31,15 +32,26 @@ Example:
 bug=Chart_1
 df4jPath=/home/huyenhuyen/Desktop/APR/defects4j/
 df4jData=/home/huyenhuyen/APR/projects/
+level=1
 
-java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug df4jData $df4jPath
+java -Xmx4g -cp "target/classes:target/dependency/*" main.Runner $bug $df4jData $df4jPath $level
 ```
 5. Run
 ```
 sh run.sh
 ```
 
-Note: Or you can use IntelliJ IDE and run src/main/java/main/Runner.java with three parameters respectively $bug df4jData $df4jPath
+Note: 
+- You can use IntelliJ IDE and run src/main/java/main/Runner.java with four parameters respectively $bug $df4jData $df4jPath $level
+- We recommend using level=1 to solve infinite loop. our knowledge, in practical projects, the most common case is where a function has a function parameter (i.e., LEVEL = 1)
+
+The below figure is a scenario of an infinite loop when the candidate of a token is a method with a parameter.
+![Fig.1](imgs/slide-loop1.drawio.png)
+
+To solve the infinite loop, we limit level = 1 shown below figure:
+![Fig.2](imgs/fix.png)
+
+
 
 
 
